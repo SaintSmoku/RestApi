@@ -1,47 +1,22 @@
 import express from "express";
 import { Router } from 'express';
+import { getCategory, 
+         getCategories, 
+         deleteCategory, 
+         updateCategory, 
+         createCategory } from '../controller/controller.js';
 
-const router = Router();
+const router = express.Router();
 
-router.get("/", (req, res) => {
-  // res.send("Hello World");
-  res.status(200).json({
-    success : true,
-    data : "All categories are here"
-  })
-});
 
-router.post("/", (req, res) => {
-  // res.send("Hello World");
-  res.status(200).json({
-    success : true,
-    data : "Create new category..."
-  })
-});
+router.route("/")
+      .get(getCategories)
+      .post(createCategory);
 
-router.put("/:id", (req, res) => {
-  // res.send("Hello World");
-  res.status(200).json({
-    success : true,
-    data : `Change the category on id ${req.params.id}`
-  })
-});
-
-router.delete("/:id", (req, res) => {
-  // res.send("Hello World");
-  res.status(200).json({
-    success : true,
-    data : `Delete the category id ${req.params.id}`
-  })
-});
-
-router.get("/:id", (req, res) => {
-  // res.send("Hello World");
-  res.status(200).json({
-    success : true,
-    data : `Get the category id ${req.params.id}`
-  })
-});
+router.route("/:id")
+      .get(getCategory)
+      .put(updateCategory)
+      .delete(deleteCategory);
 
 // module.exports = router;
 

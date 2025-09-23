@@ -1,0 +1,8 @@
+::1 - - [23/Sep/2025:13:58:48 +0000] "DELETE /api/v1/categories/589 HTTP/1.1" 200 52 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:13:58:50 +0000] "GET /api/v1/categories/589 HTTP/1.1" 200 49 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:13:58:53 +0000] "GET /api/v1/categories HTTP/1.1" 200 89 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:15:04:29 +0000] "GET /api/v1/categories HTTP/1.1" 200 89 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:15:04:35 +0000] "GET /api/v1/categories/361626412 HTTP/1.1" 200 55 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:15:04:41 +0000] "DELETE /api/v1/categories/361626412 HTTP/1.1" 200 58 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:15:04:44 +0000] "DELETE /api/v1/categories/36 HTTP/1.1" 200 51 "-" "PostmanRuntime/7.45.0"
+::1 - - [23/Sep/2025:15:04:48 +0000] "PUT /api/v1/categories/36 HTTP/1.1" 200 54 "-" "PostmanRuntime/7.45.0"

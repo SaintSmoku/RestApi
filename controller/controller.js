@@ -6,7 +6,8 @@
 export function getCategories(req, res, next) {
   res.status(200).json({
     success : true,
-    data : "All categories are here"
+    data : "All categories are here",
+    userID : req.userID
   })
 }
 
